@@ -11,3 +11,13 @@ CREATE TABLE IF NOT EXISTS books(
   genre VARCHAR(1000),
   height INT,
   publisher VARCHAR(1000));
+
+DROP TABLE IF EXISTS users;
+CREATE TABLE IF NOT EXISTS users(
+  id SERIAL PRIMARY KEY,
+  first_name VARCHAR(10),
+  last_name VARCHAR(10),
+  username VARCHAR(50) UNIQUE,
+  email VARCHAR(255) UNIQUE,
+  password VARCHAR(255) UNIQUE,
+  role VARCHAR(50));
