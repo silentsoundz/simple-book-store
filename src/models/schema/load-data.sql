@@ -1,0 +1,1 @@
+\copy books(Title,Author,Genre,Height,Publisher)FROM './src/models/schema/seed/books.csv' DELIMITER ',' CSV HEADER;
